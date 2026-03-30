@@ -243,6 +243,37 @@ body {
   pointer-events: auto;
 }
 
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    min-height: auto;
+  }
+
+  .form-container {
+    width: 100% !important;
+  }
+
+  .container form {
+    padding: 0 20px;
+  }
+
+  .container button {
+    padding: 10px 25px;
+    width: 100%;
+  }
+
+  .toggle-container {
+    display: none; 
+  }
+
+  .toggle-container {
+    border-radius: 40px 0 0 40px;
+  }
+  .container.active .toggle-container {
+    border-radius: 0 40px 40px 0;
+  }
+}
+
 .page-header .credit a:hover {
   text-decoration: underline;
 }
